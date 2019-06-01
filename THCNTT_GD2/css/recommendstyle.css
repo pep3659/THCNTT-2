@@ -1,0 +1,78 @@
+body{
+	background-color:rgb(10,12,20);
+	color:white;
+	margin:0px;
+	padding:30px;
+	font-family:arial;
+	
+}
+h1{
+	font-size:45px;
+	color:wheat;
+	text-align:center;
+}
+a{
+	color:white;
+	font-size:65px;
+	font-family:arial;
+	
+}
+b{
+	
+	font-family:arial; 
+	margin:50px;
+	font-size:17px;
+}
+.smarthome{
+	float:left;
+	margin-bottom:14px;
+	color:white;
+}
+.Wrap1{
+	margin:0;
+	padding:0;
+}
+.avatar{
+	width: 550px;
+	height: 280px;
+	right:30px;
+	top:219px;
+	position:absolute;
+	
+}
+
+.image{
+	margin-top:100px;
+	float:left;
+	height:230px;
+}
+
+.wrap{
+	float:left;
+	width:100%;
+	margin-bottom:46px;
+}
+.right{
+	float:left;
+	margin-top:110px;
+	margin-left:45px;
+	margin-right:-15px;
+	text-align:justify;
+	width:70%;
+	
+}
+.right_td{
+	float:left;
+	font-size:27px;
+	font-family:arial;
+	margin-top:-8px;
+	width:100%;
+}
+.right_nd{
+	float:left;
+	font-size:17px;
+	font-family:arial;
+	margin-top:30px;
+	width:100%;
+	
+}
