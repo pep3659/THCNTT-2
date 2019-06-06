@@ -1,0 +1,382 @@
+h2{
+	color:wheat;
+	text-shadow:3px 4px gray;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+p{
+	color:#AAB8C5;
+	font-size:17px;
+}
+header {
+  background-image:url(./h9.jpg);
+  padding:5px;
+  text-align: center;
+  font-size: 70px;
+  font-family:arial;
+  color: white;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+  animation-name: example;
+  animation-duration: 4s;
+}
+h6{
+	text-align:right;
+	font-size:20px;
+	color:rgb(255, 255, 0);
+}
+@-webkit-keyframes example {
+  from {color: white;}
+  to {color: yellow;}
+}
+
+/* Standard syntax */
+@keyframes example {
+  from {color: white;}
+  to {color: yellow;}
+}
+.avatar{
+	width: 180px;
+	height: 80px;
+	right:30px;
+	top:40px;
+	position:absolute;
+	
+}
+nav  {
+  float: left;
+  width: 22%;
+  height: 1000px; /* only for demonstration, should be removed */
+  background: #37404a;
+  /*background:#37404a;*/
+  padding: 20px;
+}
+
+.logo-user{
+	text-align:center;
+	margin-top:20px;
+}
+.logo-user-radius{
+	width:90px;
+	height:90px;
+	border-radius:5%;
+}
+.nd{
+	padding-left:5%;
+	margin-top:30px;
+}
+.paragraph-line-first{
+	
+	padding-bottom:2px;
+	color:white;
+}
+.paragraph-line{
+	padding-bottom:2px;
+	color:#AAB8C5;
+}
+h3{ 
+	display:block;
+	font-size:1.25em;
+	margin-block-start:1em;
+	margin-block-end:1em;
+	margin-inline-start:0px;
+	margin-inline-end:0px;
+	font-weight:bold;
+	font-family:arial;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 78%;
+  background: rgb(54,60,66);
+  /*background:rgb(54,60,66);*/
+  height: 840px; /* only for demonstration, should be removed */
+}
+
+#time{
+	margin: 20px auto;
+	width:900px;
+	padding:20px;
+	font-family:arial;
+	font-size:2em;
+	background:rgb(30, 37, 55);
+	
+	color:white;
+	border-radius:10px;
+	text-align:center;
+	font-weight:bold;
+}
+.box{
+	margin:20px auto;
+	width:78%;
+	padding:20px;
+	font-family:arial;
+	border-radius:10px;
+	text-align:center;
+	font-weight:bold;
+}
+
+h4{
+	font-size:25px;
+	color:#AAB8C5;
+}
+h5{
+	color:#AAB8C5;
+}
+
+.icon{
+	float:right;
+	
+}
+.loginbox{
+	background:#37404a;
+	width: 255px;
+	height:190px;
+	padding: 10px 20px;
+	margin: 30px;
+	top:600px;
+	left: 500px;
+	position:absolute;
+	transform: translate(-50%,-50%);
+	box-sizing: border-box;
+}
+.loginbox1{
+	background:#37404a;
+	width: 255px;
+	height:190px;
+	padding: 10px 20px;
+	margin: 30px;
+	top:600px;
+	left: 785px;
+	position:absolute;
+	transform: translate(-50%,-50%);
+	box-sizing: border-box;
+}
+
+.loginbox2{
+	background:#37404a;
+	width: 255px;
+	height:190px;
+	padding: 10px 20px;
+	margin: 30px;
+	top:820px;
+	left: 500px;
+	position:absolute;
+	transform: translate(-50%,-50%);
+	box-sizing: border-box;
+}
+.loginbox3{
+	background:#37404a;
+	width: 255px;
+	height:190px;
+	padding: 10px 20px;
+	margin: 30px;
+	top:820px;
+	left: 785px;
+	position:absolute;
+	transform: translate(-50%,-50%);
+	box-sizing: border-box;
+}
+
+.loginbox4{
+	background:#37404a;
+	width: 255px;
+	height:190px;
+	padding: 10px 20px;
+	margin: 30px;
+	top:600px;
+	left: 1070px;
+	position:absolute;
+	transform: translate(-50%,-50%);
+	box-sizing: border-box;
+}
+
+.loginbox5{
+	background:#37404a;
+	width: 255px;
+	height:190px;
+	padding: 10px 20px;
+	margin: 30px;
+	top:820px;
+	left: 1070px;
+	position:absolute;
+	transform: translate(-50%,-50%);
+	box-sizing: border-box;
+}
+.icon1{
+	float:left;
+}
+.loginbox6{
+	background:#37404a;
+	width: 1000px;
+	height:50px;
+	padding: 0px 20px;
+	margin: 0px;
+	top:1020px;
+	left:820px;
+	position:absolute;
+	transform: translate(-50%,-50%);
+	box-sizing: border-box;
+}
+
+.loginbox7{
+	background:#37404a;
+	width: 1000px;
+	height:50px;
+	padding: 0px 20px;
+	margin: 0px;
+	top:1100px;
+	left:820px;
+	position:absolute;
+	transform: translate(-50%,-50%);
+	box-sizing: border-box;
+}
+.position{
+	margin-top:5px;
+}
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+	top:0px;
+	float:right;
+	margin:0.5% 1% 0 0;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right:0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+ 
+}
+
+/* Style the footer */
+footer {
+	float:left;
+	background: rgb(10, 10, 17);
+	padding: 0px;
+	
+	width:78%;
+	height:160px;
+	text-align: center;
+  
+}
+
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+}}
+.thangdo
+{
+	float: left;
+	margin-top: 0px;
+	margin-bottom: 10px;
+	
+}
+.Mid
+{
+	float: left;
+	margin-top: 0px;
+	margin-bottom: 32px;
+	margin-right: 2px;
+}
+.thangdoF
+{
+	float: left;
+	margin-top: 0px;
+	margin-bottom: 32px;
+	margin-right: 1px;
+}
+.chuF
+{
+	float: left;
+	margin-top: 0px;
+	margin-bottom: 32px;
+	margin-right: auto;
+}
+.saiso{
+	float: left;
+	margin-top: 0px;
+	margin-right: 80px;
+}
+.thangdo4box
+{
+	float: left;
+	margin-top: 0px;
+	padding-right: 2px;
+}
+.DonVi4box
+{
+	float: left;
+	margin-right:80px;
+	margin-top: 0px;
+}
