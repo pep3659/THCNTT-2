@@ -1,0 +1,177 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>jQuery Button Switch Plugin</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/flatly/bootstrap.min.css" rel="stylesheet" integrity="sha384-+ENW/yibaokMnme+vBLnHMphUYxHs34h9lpdbSLuAwGkOKFRl4C34WkjazBtb7eT" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/darcula.css">
+    <link rel="stylesheet" href="assets/css/jquery.btnswitch.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <script src="assets/js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+</head>
+<body>
+
+<div class="jumbotron">
+    <div class="container">
+        <h1>jQuery Button Switch</h1>
+        <p>A simple way to create button switches</p>
+        <p><a href="https://github.com/eman1986/jquery.btnSwitch" class="btn btn-primary btn-lg">View On <strong>GitHub</strong></a></p>
+    </div>
+</div>
+
+<div class="container-fluid bg">
+    <h2>Install</h2>
+    <hr>
+
+    <pre><code class="bash">npm install jquery-btnswitch</code></pre>
+
+    <p><strong>you must be using at least jQuery 2.0</strong></p>
+
+    <h2>Settings</h2>
+    <hr>
+
+    <ul>
+        <li><strong>Theme:</strong> Select a theme (Button, Light, Swipe, iOS, Android) <code>Default: Button</code></li>
+        <li><strong>OnText:</strong> What to display for the "On" Button <code>Default: On</code></li>
+        <li><strong>OffText:</strong> What to display for the "Off" Button <code>Default: Off</code></li>
+        <li><strong>OnValue:</strong> The value of the "On" Button <code>Default: true</code></li>
+        <li><strong>OffValue:</strong> The value of the "Off" Button <code>Default: false</code></li>
+        <li><strong>OnCallback:</strong> Callback to fire when the "On" button is clicked <code>Default: null</code></li>
+        <li><strong>OffCallback:</strong> Callback to fire when the "Off" button is clicked <code>Default: null</code></li>
+        <li><strong>ToggleState:</strong> Set the state of the switch toggle. <code>Default: false</code></li>
+        <li><strong>ConfirmChanges:</strong> Determines if we should confirm any changes <code>Default: false</code></li>
+        <li><strong>ConfirmText:</strong> What message we'll display to the user when ConfirmChanges is set to true <code>Default: Are you sure?</code></li>
+        <li><strong>HiddenInputId:</strong> the hidden field the plugin should populate or false to not populate a hidden field <code>Default: false</code></li>
+    </ul>
+
+    <h2>Examples</h2>
+    <hr>
+
+    <h4>Basic Implementation</h4>
+
+    <div id="btnSwitch"></div>
+    <br>
+    <pre><code class="javascript">$('#btnSwitch').btnSwitch();</code></pre>
+    <hr>
+
+    <h4>Confirm Action with Callback</h4>
+    <div id="btnSwitch2"></div>
+    <br>
+    <pre><code class="javascript">$('#btnSwitch').btnSwitch({
+    ConfirmChanges: true,
+    ConfirmText: 'You really want to do that?',
+    OnCallback: function(val) {
+        alert('system is now on');
+    },
+    OffCallback: function (val) {
+        alert('system is now off');
+    }
+});</code></pre>
+    <hr>
+
+    <h4>Callback</h4>
+    <div id="btnSwitch3"></div>
+    <br>
+    <pre><code class="javascript">$('#btnSwitch').btnSwitch({
+    OnValue: 'On',
+    OnCallback: function(val) {
+        alert('you selected ' + val);
+    },
+    OffValue: 'Off',
+    OffCallback: function (val) {
+        alert('you selected ' + val);
+    }
+});</code></pre>
+
+    <h2>Themes</h2>
+    <hr>
+
+    <p>
+        You can change the look of the switch by selecting one of the possible themes below:
+    </p>
+
+    <h4>Light</h4>
+    <div id="btnSwitchLightTheme"></div>
+    <br>
+    <pre><code class="javascript">$('#btnSwitch').btnSwitch({
+    Theme: 'Light'
+});</code></pre>
+
+    <h4>Swipe</h4>
+    <div id="btnSwitchSwipeTheme"></div>
+    <br>
+    <pre><code class="javascript">$('#btnSwitch').btnSwitch({
+    Theme: 'Swipe'
+});</code></pre>
+
+    <h4>iOS</h4>
+    <div id="btnSwitchiOSTheme"></div>
+    <br>
+    <pre><code class="javascript">$('#btnSwitch').btnSwitch({
+    Theme: 'iOS'
+});</code></pre>
+
+    <h4>Android</h4>
+    <div id="btnSwitchAndroidTheme"></div>
+    <br>
+    <pre><code class="javascript">$('#btnSwitch').btnSwitch({
+    Theme: 'Android'
+});</code></pre>
+</div>
+
+<footer>
+    <p>
+        Project maintained by <a href="http://emandevelopmentdesign.com">Eman Development & Design</a>
+        &nbsp;Theme By <a href="https://bootswatch.com/" target="_blank">Bootswatch</a>
+    </p>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="assets/js/jquery.btnswitch.min.js"></script>
+<script type="text/javascript">
+    $('#btnSwitch').btnSwitch();
+
+    $('#btnSwitch2').btnSwitch({
+        ConfirmChanges: true,
+        ConfirmText: 'You really want to do that?',
+        OnCallback: function(val) {
+            alert('system is now on');
+        },
+        OffCallback: function (val) {
+            alert('system is now off');
+        }
+    });
+
+    $('#btnSwitch3').btnSwitch({
+        OnValue: 'On',
+        OnCallback: function(val) {
+            alert('you selected ' + val);
+        },
+        OffValue: 'Off',
+        OffCallback: function (val) {
+            alert('you selected ' + val);
+        }
+    });
+
+    $('#btnSwitchLightTheme').btnSwitch({
+        Theme: 'Light'
+    });
+
+    $('#btnSwitchSwipeTheme').btnSwitch({
+        Theme: 'Swipe'
+    });
+
+    $('#btnSwitchiOSTheme').btnSwitch({
+        Theme: 'iOS'
+    });
+
+    $('#btnSwitchAndroidTheme').btnSwitch({
+        Theme: 'Android'
+    });
+</script>
+</body>
+</html>
